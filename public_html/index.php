@@ -14,7 +14,7 @@
 	<!-- Google reCAPTCHA -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<!-- title-->
-	<title>Literary Mutilator</title>
+	<title>Contact Form Demo</title>
 </head>
 <body>
 
