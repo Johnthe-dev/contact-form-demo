@@ -33,9 +33,12 @@
 	<script src="js/form-validate.js"></script>
 
 	<!-- Google reCAPTCHA -->
-	<script src='https://www.google.com/recaptcha/api.js'></script>
-	<!-- title-->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+	<!--title-->
 	<title>Contact Form </title>
+
+
+
 </head>
 <body>
 <!--
@@ -67,46 +70,46 @@ Create your own contact form.
 Do not copy and paste this one.
 -->
 <div class="col-6">
-	<form id="johns-form" action="../php" method="post">
+	<form id="johns-form" name="johns-form" action="../php/" method="post">
 		<div class="form-group">
-			<label for="contactName">Name <span class="text-danger">*</span></label>
+			<label for="name">Name <span class="text-danger">*</span></label>
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span class="input-group-text"></span>
 					<i class="fa fa-user" aria-hidden="true"></i>
 				</div>
-				<input type="text" class="form-control" id="contactName" name="contactName" placeholder="Name">
+				<input type="text" class="form-control" id="name" name="name" placeholder="Name">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="contactEmail">Email <span class="text-danger">*</span></label>
+			<label for="email">Email <span class="text-danger">*</span></label>
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span class="input-group-text"></span>
 					<i class="fa fa-envelope" aria-hidden="true"></i>
 				</div>
-				<input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="Email">
+				<input type="email" class="form-control" id="email" name="email" placeholder="Email">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="contactSubject">Subject</label>
+			<label for="subject">Subject</label>
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span class="input-group-text"></span>
 					<i class="fa fa-pencil" aria-hidden="true"></i>
 				</div>
-				<input type="text" class="form-control" id="contactSubject" name="contactSubject"
+				<input type="text" class="form-control" id="subject" name="subject"
 						 placeholder="Subject">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="contactMessage">Message <span class="text-danger">*</span></label>
+			<label for="message">Message <span class="text-danger">*</span></label>
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span class="input-group-text"></span>
 					<i class="fa fa-comment" aria-hidden="true"></i>
 				</div>
-				<textarea class="form-control" rows="5" id="contactMessage" name="contactMessage"
+				<textarea class="form-control" rows="5" id="message" name="message"
 							 placeholder="(2000 characters max)"></textarea>
 			</div>
 		</div>
