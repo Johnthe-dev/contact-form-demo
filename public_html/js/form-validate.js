@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 	/* begin validate function here */
 	//Change my-contact-form to contact form id
-	$("#my-contact-form").validate({
+	$("#johns-form").validate({
 
 		// setup handling of form errors
 		debug: true,
@@ -56,9 +56,9 @@ $(document).ready(function(){
 
 		// AJAX submit the form data to back end if rules pass
 		submitHandler: function(form) {
-			$("#my-contact-form").ajaxSubmit({
+			$("#johns-form").ajaxSubmit({
 				type: "POST",
-				url: $("#my-contact-form").attr("action"),
+				url: $("#johns-form").attr("action"),
 
 				success: function(ajaxOutput) {
 					// clear the output area's formatting
@@ -69,7 +69,7 @@ $(document).ready(function(){
 
 					// reset the form if it was successful
 					if($(".alert-success").length >= 1) {
-						$("#my-contact-form")[0].reset();
+						$("#johns-form")[0].reset();
 					}
 				}
 			})
